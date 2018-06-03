@@ -1,20 +1,10 @@
-package br.com.usjt.strategy.sort;
+package br.com.usjt.exercicio6.item2;
 
-public class Quicksort implements Sort {
+public class Quick implements Sort {
 
 	@Override
 	public int[] sort(int[] v) {
-		return quicksort(v, 0, v.length);
-	}
-
-	public int[] quicksort(int v[], int p, int r) {
-		int j;
-		if (p < r) {
-			j = separa(v, p, r);
-			quicksort(v, p, j - 1);
-			quicksort(v, j + 1, r);
-		}
-		return v;
+		return quicksort(v, 0, v.length - 1);
 	}
 
 	private int separa(int v[], int p, int r) {
@@ -38,4 +28,13 @@ public class Quicksort implements Sort {
 		return j;
 	}
 
+	public int[] quicksort(int v[], int p, int r) {
+		int j;
+		if (p < r) {
+			j = separa(v, p, r);
+			quicksort(v, p, j - 1);
+			quicksort(v, j + 1, r);
+		}
+		return v;
+	}
 }

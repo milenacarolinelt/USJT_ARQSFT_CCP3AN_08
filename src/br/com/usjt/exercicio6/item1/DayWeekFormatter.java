@@ -1,4 +1,4 @@
-package br.com.usjt.strategy.dayweek;
+package br.com.usjt.exercicio6.item1;
 
 import java.util.Calendar;
 import java.util.Date;

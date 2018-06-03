@@ -1,4 +1,4 @@
-package br.com.usjt.strategy.dayweek;
+package br.com.usjt.exercicio6.item1;
 
 public class Domingo implements DayWeek {
 

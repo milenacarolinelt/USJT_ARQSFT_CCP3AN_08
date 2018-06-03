@@ -1,4 +1,4 @@
-package br.com.usjt.strategy.sort;
+package br.com.usjt.exercicio6.item2;
 
 public class Bubble implements Sort {
 
